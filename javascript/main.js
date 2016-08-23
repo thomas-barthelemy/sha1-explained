@@ -364,6 +364,8 @@ var Main = (function () {
 
         // Step 14: We reduce the 5 remaining strings by concatenating their hexadecimal
         // values.
+        // Depending on the tool / platform, a SHA1 may also be given as a BASE64 ASCII
+        // string.
         var step14_finalize =
             Utils.binToHex(h0, 8) +
             Utils.binToHex(h1, 8) +
